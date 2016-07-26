@@ -1,0 +1,7 @@
+redis:
+    image: redis
+cli:
+    image: redis
+    links:
+        - redis
+    command: [redis-cli, -h, redis]
