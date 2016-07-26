@@ -1,0 +1,7 @@
+postgres:
+    image: postgres
+psql:
+    image: postgres
+    links:
+        - postgres
+    command: psql -h postgres -U postgres
