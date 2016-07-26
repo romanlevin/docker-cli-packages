@@ -1,0 +1,7 @@
+mongo:
+    image: mongo
+cli:
+    image: mongo
+    links:
+        - mongo
+    command: mongo mongo:27017/test
